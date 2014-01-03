@@ -39,11 +39,14 @@ tell application "Google Chrome"
 	end tell
 end tell
 
-delay 3 -- the initial opening of chrome takes a while
+
+
+-- opens news and email 
+
+delay 3 -- (have to wait a bit longer here: the initial opening of chrome takes a while)
 launch application "desktop2"
 delay 1
 
--- opens news and email 
 tell application "Google Chrome"
 	tell (make new window)
 		set URL of active tab to "https://news.ycombinator.com/"
@@ -52,11 +55,14 @@ tell application "Google Chrome"
 	end tell
 end tell
 
+
+
+-- open todo list apps
+
 delay 1
 launch application "desktop3"
 delay 1
 
--- opens todo list apps
 tell application "Google Chrome"
 	-- to do list, and done this calendar
 	tell (make new window)
@@ -66,11 +72,14 @@ tell application "Google Chrome"
 	end tell
 end tell
 
+
+
+-- opens project management and time tracking apps
+
 delay 1
 launch application "desktop4"
 delay 1
 
--- opens project management and time tracking apps
 tell application "Google Chrome"
 	-- project mode
 	tell (make new window)
@@ -80,11 +89,15 @@ tell application "Google Chrome"
 	end tell
 end tell
 
+
+
+-- calendar and meetup
+
 delay 1
 launch application "desktop5"
 delay 1
 
--- calendar and meetup
+
 tell application "Google Chrome"
 	tell (make new window)
 		set URL of active tab to "http://www.meetup.com/"
