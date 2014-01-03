@@ -19,6 +19,7 @@ delay 1
 launch application "desktop1"
 delay 1
 
+
 -- opening up iTerm2 for development
 tell application "iTerm 2"
 	set myterm to (make new terminal)
@@ -26,6 +27,7 @@ tell application "iTerm 2"
 	-- some items don't respond well to setting the bounds via "set bounds to {4, 4, 4, 4} etc, in that case use the following	
 	set the bounds of the first window to {_width / 2, 0, _width, _height}
 end tell
+
 
 -- web opens the websites I work on
 tell application "Google Chrome"
@@ -40,7 +42,6 @@ end tell
 delay 3 -- the initial opening of chrome takes a while
 launch application "desktop2"
 delay 1
-
 
 -- opens news and email 
 tell application "Google Chrome"
@@ -76,7 +77,6 @@ tell application "Google Chrome"
 		set URL of active tab to "https://trello.com/"
 		set newTab to make new tab with properties {URL:"http://www.getharvest.com/"}
 		set bounds to {0, 0, _width, _height}
-		
 	end tell
 end tell
 
@@ -92,6 +92,4 @@ tell application "Google Chrome"
 		set bounds to {0, 0, _width, _height}
 	end tell
 	activate
-	
-	
 end tell
