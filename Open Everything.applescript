@@ -1,3 +1,13 @@
+-- sadly we can't set the desktop via applescript anymore
+-- otherwise this would have been a great way to get started automagically
+
+-- this script must be compiled and called from the .xinitrc file
+-- oh yeah, first copy the xinitrc file in from your mac drive
+-- into your home folder as ~/.xinitrc
+-- THEN paste the call for this script to run at the end of it
+-- this should effectively open up everything when your computer first opens
+
+
 --List item 1: {72, 90, 512, 481}
 --The distance in pixels from the left side of the screen to the left side of the Finder window.
 --List item 2: {72, 90, 512, 481}
